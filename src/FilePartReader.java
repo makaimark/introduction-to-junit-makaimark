@@ -41,7 +41,7 @@ public class FilePartReader {
         String returnString = "";
         for ( String str : tempArray) {
             if ( counter >= fromLine && counter <= toLine ) {
-                returnString += str + '\n';
+                returnString += str + " ";
             }
             counter++;
         }
