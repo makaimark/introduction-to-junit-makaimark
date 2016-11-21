@@ -1,3 +1,5 @@
+package Project;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -15,16 +17,17 @@ public class FileWordAnalyzer {
     }
 
     public ArrayList wordsByABC() throws IOException {
-        String lines = reader.readLines();
+        //String lines = reader.readLines(); without mocking
+        String lines = TestReader.readLines();
         ArrayList<String> returnList = new ArrayList<>(Arrays.asList(lines.split(" ")));
-        System.out.println(returnList);
         Collections.sort(returnList);
         System.out.println(returnList);
         return returnList;
     }
 
     public ArrayList wordsContainingSubString(String subString) throws IOException {
-        String lines = reader.readLines();
+        //String lines = reader.readLines(); without mocking
+        String lines = TestReader.readLines();
 
         ArrayList<String> list = new ArrayList<>(Arrays.asList(lines.split(" ")));
 

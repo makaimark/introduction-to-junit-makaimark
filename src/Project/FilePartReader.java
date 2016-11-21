@@ -1,3 +1,5 @@
+package Project;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -12,7 +14,7 @@ public class FilePartReader {
     private int fromLine;
     private int toLine;
 
-    FilePartReader(String filePath, int fromLine, int toLine) {
+    public FilePartReader(String filePath, int fromLine, int toLine) {
         if (toLine < fromLine) new IllegalArgumentException();
         if (fromLine < 1) new IllegalArgumentException();
         this.filePath = filePath;
