@@ -1,5 +1,3 @@
-import Project.FilePartReader;
-import Project.FileWordAnalyzer;
 import org.junit.Test;
 
 import java.io.IOException;

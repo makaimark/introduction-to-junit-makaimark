@@ -3,7 +3,7 @@
  */
 public class FileReaderMock implements FileReaderInterface{
 
-    public static String readLines() {
+    public String readLines() {
         return "a test this is a test line too";
     }
 }

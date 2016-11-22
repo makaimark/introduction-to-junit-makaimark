@@ -1,5 +1,3 @@
-package Project;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -8,7 +6,7 @@ import java.io.IOException;
 /**
  * Created by makaimark on 2016.11.19..
  */
-public class FilePartReader {
+public class FilePartReader implements FileReaderInterface {
 
     private String filePath;
     private int fromLine;
@@ -43,10 +41,11 @@ public class FilePartReader {
         String returnString = "";
         for ( String str : tempArray) {
             if ( counter >= fromLine && counter <= toLine ) {
-                returnString += str + " ";
+                returnString += str + " \n";
             }
             counter++;
         }
+        System.out.printf(returnString);
         return returnString;
     }
 }
